@@ -16,7 +16,7 @@ Building validate.js
   1. `git clone git@github.com:ansman/validate.js.git`
   2. `cd validate.js`
   3. `npm install`
-  4. `grunt build`
+  4. `grunt test`
 
 This will build *validate.min.js*, *validate.min.map* and the *docs* folder.
 
