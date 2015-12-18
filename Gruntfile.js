@@ -70,6 +70,10 @@ module.exports = function(grunt) {
           specs: "<%= jasmine.specs.options.specs %>",
           helpers: "<%= jasmine.specs.options.helpers %>",
           display: "none",
+		  junit:{
+			  path:"junit", 
+			  consolidate:true
+			},
           template: require('grunt-template-jasmine-istanbul'),
           templateOptions: {
             coverage: 'coverage.json',
@@ -81,6 +85,11 @@ module.exports = function(grunt) {
               type: 'html',
               options: {
                 dir: 'coverage'
+              }
+            }, {
+              type: 'cobertura',
+              options: {
+                dir: 'cobertura'
               }
             }]
           }
