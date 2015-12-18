@@ -17,6 +17,7 @@ Building validate.js
   2. `cd validate.js`
   3. `npm install`
   4. `grunt test`
+  5. `grunt build`
 
 This will build *validate.min.js*, *validate.min.map* and the *docs* folder.
 
